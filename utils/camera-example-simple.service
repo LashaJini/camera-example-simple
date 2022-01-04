@@ -1,0 +1,11 @@
+[Unit]
+Description=Camera simple example
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/ws/camera-example-simple
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
